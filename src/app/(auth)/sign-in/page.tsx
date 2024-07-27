@@ -19,6 +19,7 @@ import { useToast } from '@/components/ui/use-toast';
 import { signInSchema } from '@/schemas/signInSchema';
 import { useState } from 'react';
 import { Loader2 } from 'lucide-react';
+import { BackgroundBeams } from '@/components/ui/background-beams';
 
 export default function SignInForm() {
   const router = useRouter();
@@ -65,8 +66,9 @@ export default function SignInForm() {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-800">
-      <div className="w-full max-w-md p-8 space-y-8 bg-white rounded-lg shadow-md">
+    <div className="relative flex justify-center items-center min-h-screen bg-[#0A0A0A]">
+      <BackgroundBeams />
+      <div className="relative z-10 w-full max-w-md p-8 space-y-8 bg-white rounded-lg shadow-md">
         <div className="text-center">
           <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl mb-6">
             Welcome Back to Eris Message

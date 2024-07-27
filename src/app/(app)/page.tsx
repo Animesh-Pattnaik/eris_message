@@ -1,12 +1,9 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { Mail } from 'lucide-react'; 
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import Autoplay from 'embla-carousel-autoplay';
-import messages from '@/messages.json';
+import { Mail } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Autoplay from "embla-carousel-autoplay";
+import messages from "@/messages.json";
 
 import {
   Carousel,
@@ -14,18 +11,18 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from '@/components/ui/carousel';
+} from "@/components/ui/carousel";
 
 export default function Home() {
   return (
     <>
-      <main className="flex-grow flex flex-col items-center justify-center px-4 md:px-24 py-12 bg-gray-800 text-white">
+      <main className="bg-grid flex-grow flex flex-col items-center justify-center px-4 md:px-24 py-12 text-white">
         <section className="text-center mb-8 md:mb-12">
           <h1 className="text-3xl md:text-5xl font-bold">
             Dive into World Myths & Rumours
           </h1>
           <p className="mt-3 md:mt-4 text-base md:text-lg">
-          Eris Message - Where your identity remains a secret.
+            Eris Message - Where your identity remains a secret.
           </p>
         </section>
 
@@ -55,7 +52,6 @@ export default function Home() {
           </CarouselContent>
         </Carousel>
       </main>
-
       {/* Footer */}
       <footer className="text-center p-4 md:p-6 bg-gray-900 text-white">
         © 2024 Eris Message. All rights reserved.
